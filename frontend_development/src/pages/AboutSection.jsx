@@ -1,12 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import aboutImage from "../assets/images/COMPANY RETURNS.png"; 
 
 
 export default function AboutSection() {
+  const navigate =useNavigate();
   return (
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center pt-20">
           
           {/* LEFT IMAGE */}
           <div className="overflow-hidden rounded-2xl shadow-lg">
@@ -35,7 +37,8 @@ export default function AboutSection() {
               efficient service delivery.
             </p>
 
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+            <button onClick={() => navigate('/about-us')}
+            className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
               Learn More
             </button>
           </div>
