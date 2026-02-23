@@ -13,63 +13,87 @@ import passportapplication from '../assets/images/PASSPORT APPLICATION.png'
 
 export const services = [
   {
+    id:1,
     title: "BUSINESS REGISTRATION",
     image: businessRegistration,
-    category: "business-registration"
+    category: "business-registration",
+    price: "2500"
   },
   {
+    id:2,
     title: "BUSINESS NAME SEARCH",
     image: namesearch,
-    category: "business-registration"
+    category: "business-registration",
+    price:1000
   },
   {
+    id:3,
     title: "COMPANY REGISTRATION",
     image: companyRegistration,
-    category: "business-registration"
+    category: "business-registration",
+    price:20000
   },
   {
+    id:4,
     title: "KRA INCOME RETURNS-EMPLOYED",
     image: incomereturns,
-    category: "kra"
+    category: "kra",
+    price: 2500
   },
   {
+    id:5,
     title: "KRA NIL RETURNS",
     image: kranilreturns,
-    category: "kra"
+    category: "kra",
+    price:500
   },
   {
+    id:6,
     title: "KRA PIN APPLICATION",
     image: krapinapplication,
-    category: "kra"
+    category: "kra",
+    price:1000
   },
   {
+    id:7,
     title: "ETIMS REGISTRATION",
     image: etimsregistration,
-    category: "kra"
+    category: "kra",
+    price:1000
   },
   {
+    id:8,
     title: "E CITIZEN ACCOUNT OPENING",
     image: ecitizen,
-    category: "ecitizen"
+    category: "ecitizen",
+    price:500
   },
   {
+    id:9,
     title: "PASSPORT APPLICATION",
     image: passportapplication,
-    category: "ecitizen"
+    category: "ecitizen",
+    price:2000
   },
   {
+    id:10,
     title: "COMPANY NIL RETURNS",
     image: companynilreturns,
-    category: "kra"
+    category: "kra",
+    price:10000
   },
   {
+    id:11,
     title: "COMPANY RETURNS",
     image: companyreturns,
-    category: "kra"
+    category: "kra",
+    price:20000
   },
   {
+    id:12,
     title: "DATA ENTRY",
     image: dataentry,
-    category: "cyber"
+    category: "cyber",
+    price:5000
   }
 ];

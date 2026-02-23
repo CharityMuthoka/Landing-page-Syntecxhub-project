@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { ChevronDown } from "lucide-react"; 
 
 const faqData = [
   {
@@ -55,11 +54,10 @@ export default function FAQ() {
             >
               <span>{item.question}</span>
 
-              <ChevronDown
-                className={`w-5 h-5 transform transition-transform duration-300 ${
-                  openIndex === index ? "rotate-180" : ""
-                }`}
-              />
+              <span className="text-xl font-bold">
+                {openIndex === index ? "-" : "+"}
+              </span>
+            
             </button>
 
             <div

@@ -3,6 +3,9 @@ import { NavLink, useLocation , useNavigate} from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../../assets/images/logo2.png';
 
+import { useCart } from "../../context/CartContext";
+
+
 const serviceLinks = [
   { label: 'All Services', path: '/services' },
   { label: 'KRA', path: '/services/kra' },
@@ -18,13 +21,13 @@ export default function Navbar() {
   const [search, setSearch] = useState("");
 const navigate = useNavigate();
 
+const { cartItems } = useCart();
 
 
 const handleSearch = () => {
   const trimmed = search.trim();
   if (trimmed !== "") {
     navigate(`/services?search=${encodeURIComponent(trimmed)}`);
-    // Do NOT clear the input immediately
   }
 };
 
@@ -77,6 +80,7 @@ const handleSearch = () => {
               whileHover={{ scale: 1.03 }}
             />
           </NavLink>
+          
 
           {/* Search */}
 
@@ -97,6 +101,16 @@ const handleSearch = () => {
     🔍
   </span>
 </div>
+
+<NavLink to="/cart" className="relative ml-4">
+  🛒
+  {cartItems.length > 0 && (
+    <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs px-2 rounded-full">
+      {cartItems.length}
+    </span>
+  )}
+</NavLink>
+
 
 
 

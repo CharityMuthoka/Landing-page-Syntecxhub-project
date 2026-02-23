@@ -3,7 +3,6 @@ import Navbar from '../components/ui/Navbar';
 import Hero from '../components/ui/Hero';
 import FAQ from '../components/ui/FAQ';
 import AboutSection from './AboutSection';
-import Footer from '../components/ui/Footer';
 
 export default function Home(){
     return(
@@ -14,7 +13,7 @@ export default function Home(){
         <Hero/>
         <AboutSection/>
         <FAQ/>
-        <Footer/>
+        
         </>
     )
 }

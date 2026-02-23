@@ -5,6 +5,7 @@ import AllServices from './pages/Home'
 import Navbar from './components/ui/Navbar'
 import Footer from './components/ui/Footer'
 import AboutSection from './pages/AboutSection'
+import CartPage from './pages/CartPage'
 
 export default function App(){
   return(
@@ -15,6 +16,8 @@ export default function App(){
       <Route path="/" element={<Home/>}/>
 <Route path="/home" element={<Home/>}/>
 <Route path="/about-us" element={<AboutSection/>}/>
+<Route path="/cart" element={<CartPage />} />
+
 
 <Route path="/services" element={<ServicesPage />}>
     <Route index element={<AllServices />} />
