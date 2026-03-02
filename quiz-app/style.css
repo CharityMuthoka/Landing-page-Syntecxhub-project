@@ -69,3 +69,9 @@ button{
     background: linear-gradient(90deg, #4CAF50, #00c6ff);
     transition: width 0.4s ease;
 }
+
+h1 {
+    text-align: center;
+    margin-bottom: 18px;
+    color:blue;
+}
